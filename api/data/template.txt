@@ -1,0 +1,7 @@
+<div class="card">
+    <img class="card-picture" :src="card.picture"/>
+    <div class="card-body">
+        <h3 class="card-title">{{card.title}}</h3>
+        <p>{{card.description}}</p>
+    </div>
+</div>
