@@ -59,11 +59,13 @@ export default {
     },
     mounted() {
         Promise.all([
+            /** Fetching data */
             fetch("http://localhost:3000/data")
                 .then((response) => response.json())
                 .then((card) => {
                     this.componentData.card = card
                 }),
+            /** Fetching template and styles */
             fetch("http://localhost:3000/template-data")
                 .then((response) => response.json())
                 .then((templateData) => {
